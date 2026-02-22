@@ -1,8 +1,6 @@
-torch
-torchvision
-torchaudio
 fastapi
 uvicorn
-pillow
+python-multipart
+opencv-python-headless
 numpy
-opencv-python
+Pillow
