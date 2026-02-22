@@ -28,3 +28,8 @@ async def inpaint(image: UploadFile = File(...), mask: UploadFile = File(...)):
     out_img = Image.fromarray(img_np)
     out_img.save("result.png")
     return FileResponse("result.png")
+
+if __name__ == "__main__":
+    import uvicorn
+    port = int(os.environ.get("PORT", 8000))
+    uvicorn.run(app, host="0.0.0.0", port=port)
